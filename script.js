@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Set the content of the card
         countryCard.innerHTML = `
-          <h2>${country.name.common}</h2>
-          <img src="${country.flags.svg}" alt="Flag of ${country.name.common}">
+          <div class="flagContainer">
+            <img src="${country.flags.svg}" alt="Flag of ${country.name.common}">
+          </div>
+          <div class="nameContainer">
+            <h2>${country.name.common}</h2>
+          </div>
         `;
 
         // Append the card to the container

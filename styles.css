@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: midnightblue;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .country-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .flagContainer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .country-card img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .nameContainer {
+  }
+
+  .country-card h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: rgb(7, 26, 104);
+    font-weight: 300;
+  }
+  
